@@ -5,7 +5,7 @@ AI=50
 
 echo "Pick any number between 1 and 100."
 
-while [[ $INP != "correct" ]]; do
+while [[ $INP !	= "correct" ]]; do
 
 	echo "Is your number higher or lower than $AI ?"
 
@@ -20,5 +20,5 @@ while [[ $INP != "correct" ]]; do
 			let AI="$(( ( MAX + MIN ) / 2  ))"
 		fi
 done
-	echo "A.I wins again. Goodbye"
+	echo "A.I. wins again. Goodbye"
 exit
