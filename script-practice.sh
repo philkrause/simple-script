@@ -73,8 +73,42 @@
 # done
 
 ##Change file extension from txt to doc
-for FILE in *.doc
-do
-    echo "Renaming $FILE"
-    mv $FILE ${FILE%.*}.txt
-done    
+# for FILE in *.doc
+# do
+#     echo "Renaming $FILE"
+#     mv $FILE ${FILE%.*}.txt
+# done    
+
+
+#WHILE LOOP - READ THROUGH FILE LINE BY LINE
+# LINE=1
+
+# while read -r CURRENT_LINE
+# do
+# echo "$LINE: $CURRENT_LINE"
+# ((LINE++))
+# done < "./1.txt"
+
+
+# FUNCTION
+# function sayHello(){
+#     echo "Hello World"
+# }
+
+# sayHello
+
+
+
+# FUNCTION WITH PARAMS
+# function greet() {
+#     echo "Hello, I am $1 and I am $2"
+# }
+
+# greet "Brad" "36"
+
+
+# CREATE FOLDER AND WRITE TO A FILE
+# mkdir hello
+# touch "hello/world.txt"
+# echo "Hello World" >> "hello/world.txt"
+# echo "Created hello/world.txt"
