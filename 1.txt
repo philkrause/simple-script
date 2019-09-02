@@ -1,0 +1,41 @@
+GIT Cheat Sheet
+git status​ tells status of the current git repository
+git init ​ creates a local empty git repository
+git add . ​ tells git that there are changes to track in the current directory, also adds any new files to git to
+the current git repo
+git commit -m <messagehere>​ :creating the save point
+git push ​ push the commit
+git pull ​ pull from git to update local
+//​ clone an existing repository
+git clone​ <repo url>
+//switch to branch
+git checkout <branchnamehere>
+//switch to master
+git checkout master
+//​ switch to previous git branch
+git checkout -
+//createbranch from Master
+git checkout -b <newbranchname>
+//createbranch from Branch
+git checkout -b <brachname> <newbranchname>
+//push to an already created repo’s master
+git init
+git remote add origin <repo url here>
+git add .
+git commit -m
+git push origin master
+//merge branch with branch
+git checkout <branchname>
+git merge --no-ff <newbranch> -m <messagehere> ​ // No fast-forwarding
+git push origin <branchname>
+//cancel merge
+git merge --abort//​ Show the origin you are pushing to
+Git remote show origin
+git remote show origin
+//Switch the master you are pushing to your own
+Git remote set-url origin <Repo URL Here>
+//create a gitignore file. Add node_modules
+Touch .gitignore
+If you have already committed with a node-modules folder you must untrack it.
+git rm -r --cached node_modules
+git commit -m "removing node_modules"
